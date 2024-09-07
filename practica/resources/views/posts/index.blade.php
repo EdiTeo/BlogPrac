@@ -2,8 +2,8 @@
 @section('content')
 <div class="container">
   <div class="titlebar">
-    <a class="btn btn-secondary float-end mt-3" href="{{ route('posts.create') }}" role="button">Add Post</a>
-    <h1>Mini post list</h1>
+    <a class="btn btn-secondary float-end mt-3" href="{{ route('posts.create') }}" role="button">Crear Publicación</a>
+    <h1 style="align-content: center">Mini post list</h1>
   </div>
     
   <hr>
@@ -13,25 +13,26 @@
     <p>{{ $message }}</p>
   </div>
   @endif
-         @if (count($posts) > 0)
+         @if (count($posts) > 0)  
     @foreach ($posts as $post)
       <div class="row">
         <div class="col-12">
           <div class="row">
             <div class="col-2">
-              <img class="img-fluid" style="max-width:50%;" src="{{ asset('images/'.$post->image)}}" alt="">
+              <img class="img-fluid" style="max-width:100%;" src="{{ asset('images/'.$post->image)}}" alt="">
             </div>
             <div class="col-10">
               <h4>{{$post->title}}</h4>
+              <p>{{$post->descripcion}}</p>
             </div>
           </div>
-          <p>{{$post->descripcion}}</p>
+           
           <hr>
         </div>
       </div>
     @endforeach
   @else
-    <p>No Posts found</p>
+    <p>No Posts found<!--SE MOSTRARA EN MINI POST LIST, publicaciones creadas --></p>
   @endif
 </div>
 @endsection
