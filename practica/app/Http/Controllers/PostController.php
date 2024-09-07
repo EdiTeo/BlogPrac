@@ -19,7 +19,7 @@ public function index() {
   }
   //pubicaciones de la tienda
   public function store(Request $request) {
-            // validations
+            
             $request->validate([
             'title' => 'required',
             'descripcion' => 'required',

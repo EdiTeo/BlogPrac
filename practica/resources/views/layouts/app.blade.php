@@ -9,12 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
+  
 <!-- Navbar -->
 <header>
-  <nav class="navbar bg-primary">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{{ route('posts.index') }}">Mini- pisa aqui yo tengo al index ok</a>
+      <a class="navbar-brand mb-0 h1" href="{{ route('posts.index') }}">Barra de navegación </a>
     </div>
   </nav>
 </header>
