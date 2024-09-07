@@ -1,0 +1,9 @@
+.title {
+    font-size: 60px;
+    background: linear-gradient(to right,#99DFF9, #33BEF2,#005778,#66CEF5, #00AEEF,#0083B3, #002C3C);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
