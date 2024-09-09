@@ -2,10 +2,9 @@
 @section('content')
 <div class="container">
   <div class="titlebar">
-    <a class="btn btn-secondary float-end mt-3" href="{{ route('posts.create') }}" role="button">Crear Publicación</a>
-    <h1 style="align-content: center">Mini post list</h1>
+    <a class="btn btn-secondary float-end mt-3" href="{{route('posts.create')}}" role="button">Crear Publicación</a>
+    <h1 style="align-content:flex-start ">Lista de Publicaciones</h1>
   </div>
-    
   <hr>
   
   @if ($message = Session::get('success'))
