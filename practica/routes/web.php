@@ -9,9 +9,12 @@ use App\Http\Controllers\PostController;
 //});
  
 
-Route::resource('/', PostController::class) -> names([
-    'index' => 'posts.index',
-    'create' => 'posts.create',
-    'store' => 'posts.store',
-    'show' => 'posts.show',
-]);
+//Route::resource('/', PostController::class) -> names([
+  //  'index' => 'posts.index',
+    //'create' => 'posts.create',
+    //'store' => 'posts.store',
+    //'show' => 'posts.show',
+//]);
+Route::get('/', function(){
+  return view('layouts.index');
+});//esta parte para muestra 
