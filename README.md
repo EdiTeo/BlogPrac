@@ -3,5 +3,5 @@ Blog pag. #007
 
 
 Laravel 5.8.3
-  * Comando :: ``php artisan serve``
+  * Ejecutar :: ``php artisan serve``
   * Local :: ``http://127.0.0.1:8000``
